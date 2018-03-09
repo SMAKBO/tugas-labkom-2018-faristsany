@@ -87,6 +87,134 @@
           <p>Lactic acid is an organic compound with the formula CH3CH(OH)COOH. In its solid state, it is white and water-soluble. In its liquid state, it is colorless. It is produced both naturally and synthetically. With a hydroxyl group adjacent to the carboxyl group, lactic acid is classified as an alpha-hydroxy acid (AHA). In the form of its conjugate base called lactate, it plays a role in several biochemical processes.</p>
       </div>
           </div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>PHYSICAL AND CHEMICAL PROPERTIES</h2>
+
+
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Property Name</th>
+    <th style="width:40%;">Property Value</th>
+  </tr>
+  <tr>
+    <td>Molar Mass (g/mol)</td>
+    <td>90.08</td>
+  </tr>
+  <tr>
+    <td>Boiling Point (<sup>oC)</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+<H2>Physical Properties</H2>
+<h4>Physical Description
+</h4>
+<p>LACTIC ACID is a colorless to yellow odorless syrupy liquid. Corrosive to metals and tissue. Used to make cultured dairy products, as a food preservative, and to make chemicals.
+Liquid
+Colourless or yellowish, nearly odourless, syrupy liquid to solid
+VISCOUS COLOURLESS-TO-YELLOW LIQUID OR COLOURLESS-TO-YELLOW CRYSTALS.
+</p>
+<h4>Color</h4>
+<p>Crystals (melt at 16.8 deg C)
+Yellow to colorless crystals or syrupy 50% liquid
+Viscous, colorless to yellow liquid or colorless to yellow crystals
+</p>
+<h4>Odor</h4>
+<p>Oderless
+weak unpleasant odor
+Avaible Forms have very slight acid odor</p>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
+
+          
         </div>
       </div>
       <!-- /.row -->
